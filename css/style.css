@@ -19,6 +19,7 @@ a {
 button{
     border: none;
     background: transparent;
+    cursor: pointer;
 }
 .fixed-container{
     display: flex;
@@ -96,4 +97,128 @@ button{
     -moz-border-radius:10px;
     -ms-border-radius:10px;
     -o-border-radius:10px;
+}
+.hero-section-slider__slide{
+    position: relative;
+    overflow: hidden;
+    min-width: 100%;
+    min-height: 399px;
+    border-radius: 20px;
+}
+.slide-content{
+    position: relative;
+}
+
+.hero-section-slider__slide::after,.promo::after {
+    content: "";
+    position:absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%);
+    z-index: -1;
+}
+.slide-content__img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.slide-content__title{
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 51px;
+    padding-bottom: 15.16px;
+}
+.slide-content__btn{
+    background: #F47322;
+    border-radius: 25px;
+    padding: 15px 54px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
+}
+.slide-content__description{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 23px;
+    max-width: 90%;
+    padding-bottom: 50px;
+}
+.slide-content-text{
+    max-width: 50%;
+    padding-left: 8.5%;
+    padding-top: 76px;
+}
+.hero-section{
+    padding-top: 16px;
+}
+.promo{
+    position: relative;
+    /* background-color:tomato; */
+    max-width: 570px;   
+    min-width: 47.9%;
+    min-height: 380px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 50px;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+.promo__title{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 23px;
+    color: #FFFFFF;
+    padding-bottom: 21px;
+}
+.promo__discription{
+        max-width: 38%;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 23px;
+}
+.promo__top,.promo__bottom{
+    min-height: 50%;
+    padding: 36px 30px 30px 30px;
+}
+.promo__bottom{
+    display: flex;
+    flex-direction: column;
+    padding-top: 13px;
+}
+.promo__price{
+    font-weight: 500;
+    font-size: 28px;
+    color: #FFFFFF;
+    padding-top: 12px;
+    padding-bottom: 4px;
+}
+.promo__subtitle{
+    margin-bottom: 28px;
+}
+.promo__confirm-btn{
+    background: #FFFFFF;
+    border-radius: 50px;
+    flex-grow: 0;
+    width: 232px;
+    height: 49px;  
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    color: #5F5F61;
+}
+.promo__img{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+.promo:not(:last-child){
+    margin-right: 52px;
 }
