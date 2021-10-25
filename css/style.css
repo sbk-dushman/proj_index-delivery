@@ -256,11 +256,48 @@ button{
 /* .theme-list__item:nth-child(2n+4){
     margin-bottom: 20px;
 } */
-.theme-tag{
+[class^="theme-tag_"]{
     position: absolute;
     top: 0;
     /* z-index: 16; */
-    color: red;
     left: 10.07px;
     top: 16px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    border-radius: 30px;
+    padding: 5px 10.07px;
+}
+.theme-tag_c1{
+    background-color: #D0FD89;
+    color: #49494F;
+}.theme-tag_c2{
+    background-color: #AEBC41;
+    color: #FFFFFF;
+}.theme-tag_c3{
+    background-color: #B86B78;
+    color: #FFFFFF;
+}.theme-tag_c4{
+    background-color: #D68334;
+    color: #FFFFFF;
+}.theme-tag_c5{
+    background-color: #CD6255;
+    color: #FFFFFF;
+}.theme-tag_c6{
+    background-color: #FFFDBF;
+       color: #49494F;
+}.theme-tag_c7{
+    background-color: #D0FD89;
+       color: #49494F;
+}
+.theme-tag_c8{
+    background-color: #FEF7FE;
+       color: #49494F;
+}
+.week-delivery{
+    padding-bottom: 70px;
+}
+.food-categories{
+    background-color: #F6F6F6;
+    padding-top: 46px;
 }
