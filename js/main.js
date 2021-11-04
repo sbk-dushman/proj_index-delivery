@@ -1,5 +1,18 @@
 const swiper = new Swiper('.swiper', {
-    speed: 400,
-    spaceBetween: 100,
-    
-  });
+  // Optional parameters
+  loop: true,
+
+  // If we need pagination
+  // pagination: {
+  //   el: '.swiper-pagination',
+  // },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.slide-button-next',
+    prevEl: '.slide-button-prev',
+  },
+
+  // And if we need scrollbar
+ 
+});
