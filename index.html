@@ -10,14 +10,14 @@
 	<title>ИНДЕКС ЕДА</title>
 </head>
 <body>
-	<div class="login-modal">
+	<div class="login-modal" id="modalLogin">
 		
-		<form class="login-modal__form" action="#">
+		<form class="login-modal__form" id="LoginForm" action="#">
 			<h3 class="login-modal__title">Авторизация</h3>
-			<input class="auth-input" type="text" placeholder="Логин" name="auth-login" id="auth-login">
-			<input class="auth-input" type="password" placeholder="Пароль" name="auth-pass" id="auth-pass">
+			<input class="auth-input" type="text" placeholder="Логин" name="auth-login" required id="auth-login">
+			<input class="auth-input" type="password" placeholder="Пароль" name="auth-pass" required id="auth-pass">
 			<button class="login-modal__login-btn">Войти</button>
-			<button class="close-btn">
+			<button class="close-btn" id="closeModalBTN">
 				<svg width="19" height="19" viewBox="0 0 19 19"  xmlns="http://www.w3.org/2000/svg">
 					<line y1="-1" x2="23.254" y2="-1" transform="matrix(0.682318 0.731056 -0.682318 0.731056 1 2)"  stroke-width="2"/>
 					<line y1="-1" x2="23.254" y2="-1" transform="matrix(0.682318 -0.731056 0.682318 0.731056 2.13342 19)"  stroke-width="2"/>
@@ -346,7 +346,12 @@
 				</button>
 			</form>
 			<div class="header-profile">
-				<button class="header-profile__sing-in">Войти</button>
+				<div class="">
+					<button class="header-profile__sing-in" id="singInBTN">Войти</button>
+					
+				<button class="header-profile__sing-out" id="singOutBTN">Выйти</button>
+				<span class="user-name">вася</span>
+				</div>
 				<a class="header-profile__cart-link" href="#cart">
 					<span class="header-profile__cart-icon">
 
